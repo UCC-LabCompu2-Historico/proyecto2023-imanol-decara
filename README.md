@@ -1,8 +1,8 @@
 # proyecto2023-imanol-decara
 proyecto2023-imanol-decara created by GitHub Classroom
 
-  *ITULO: Fiat Web Page
- *AUTORES: Imanol Decara
+  TITULO: Fiat Web Page
+  AUTORES: Imanol Decara
   LINK GH-PAGE:[Proyecto 2023 - Imanol Decara](https://ucc-labcompu2.github.io/proyecto2023-imanol-decara/Index.html)
 
 
