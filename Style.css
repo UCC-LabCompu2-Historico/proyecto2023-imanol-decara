@@ -1,0 +1,288 @@
+
+body {
+    margin: 0;
+}
+
+p {
+    margin-right: 40px;
+}
+
+h1 {
+    margin: 0px 400px;
+    text-align: center;
+}
+
+button.redondo {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 0px 20px;
+    height: 32px;
+}
+
+div#introduction-actions {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#fondo{
+    background-color: #EDEDE3;
+}
+
+.textbody {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    font-style: normal;
+}
+
+.opcion-texto{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    font-style: normal;
+    color: #ccc;
+}
+
+#barra-superior{
+    border-bottom: 1px solid gray; 
+    display: flex; 
+    padding: 10px 100px; 
+    justify-content: space-between;  
+    background-color: #18131F; 
+}
+
+.header,.textbody {
+    font-size: small;
+    color: #18131F;
+}
+
+.favicon {
+    height: 25px;
+    margin: 25px;
+    margin-left:24px;
+}
+
+button.redondo {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 0px 20px ;
+    height: 32px;
+    border-width: 2px;
+    margin-right:24px;
+}
+
+#espacio-logo{
+    padding-top: 20px;
+    margin-left: 25%;
+}
+
+#opciones {
+    display: flex; 
+    align-items: center; 
+    margin-right: 15%;
+}
+
+#sumate-morado {
+    margin-left: 14px;
+    color:#6b53f0;
+    border-color: #6b53f0;
+}
+
+#impacto{
+    background-color: #201b24;
+    height: 400px;
+    width: 100%;
+    margin-top: 90px;
+    align-items: center; 
+}
+
+.impacto-font{
+    color: white;
+    font-size: small;
+}
+
+#impacto-texto{
+    margin-top: 10px;
+    height: 200px;
+    width: 100%;
+}
+
+#autos{
+    align-items: center; 
+    max-width: 80%;
+    
+}
+
+#cronos{
+    max-width: 70%;
+}
+
+#titulo-auto{
+    max-width: 60%;
+}
+
+#auto-principal{
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+
+#auto-derecha{
+    align-items: top; 
+    justify-content: top;
+}
+
+#canvas{ 
+    align-items: center;
+    align-content: center; 
+    justify-content: center;
+    height: 300px;
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color: #ccc;
+}
+
+#texto-canvas{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    font-style: normal;
+    color: #ccc;
+    padding-top: 20px;
+}
+#texto-consultas{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    font-style: normal;
+    color: #201b24;
+    padding-top: 20px;
+}
+
+#consulta{ 
+    display: flex; 
+    align-items: center;
+    align-content: center; 
+    justify-content: center;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+#enviar {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 0px 20px;
+    height: 32px;
+    margin-left: 20px;
+}
+
+#banner {
+    height: 500px;
+    width: 100%;
+}
+
+#contacto{
+    margin-top: 40px;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}
+  
+  .form {
+    background-color: #18131F;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 500px;
+    padding: 20px;
+    width: 320px;
+  }
+  
+  .title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
+    margin-top: 30px;
+  }
+  
+  .input {
+    background-color: #303245;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  
+  .placeholder {
+    color: #65657b;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-40px) translateX(0px) scale(1); /* Esta linea en css es para que se nueva los campos arriba*/
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+  }
+  
+  .input:focus ~ .placeholder { /* pinta el texto en blanco al desplazarse*/
+    color: white;
+  }
+  
+  .submit {
+    background-color: #268F52;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .submit:active {
+    background-color: #06b;
+  }
+  
