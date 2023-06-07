@@ -22,4 +22,5 @@
   - HTML
   - CSS
   - YouTube
+  - JavaScript
    
