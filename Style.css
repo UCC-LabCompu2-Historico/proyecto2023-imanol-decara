@@ -1,12 +1,17 @@
+/* Importa la fuente Roboto desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
+/* Estilo para el cuerpo de la página */
 body {
     margin: 0;
 }
 
+/* Estilo para los párrafos */
 p {
     margin-right: 40px;
 }
 
+/* Estilo para los encabezados*/
 h1 {
     margin: 15px;
     text-align: center;
@@ -25,6 +30,8 @@ div#introduction-actions {
     justify-content: center;
 
 }
+
+/* Estilo para el canvas */
 canvas {
     align-items: center;
     align-content: center;
@@ -39,9 +46,11 @@ canvas {
 #fondo {
     background-color: #EDEDE3;
 }
+
 #borderless {
     border: none;
 }
+
 .textbody {
     font-family: 'Roboto', sans-serif;
     font-weight: lighter;
@@ -79,7 +88,7 @@ button.redondo {
     background-color: white;
     border: 1px solid black;
     border-radius: 25px;
-    padding: 0px 20px; /* el 0px no es redundante porque se baja el texto del boton sino*/
+    padding: 0px 20px; /* el 0px no es redundante (correcion para el texto del boton)*/
     height: 32px;
     margin-right: 24px;
 }
@@ -89,9 +98,11 @@ button.redondo {
     align-items: center;
     justify-content: center;
 }
+
 .texto-plan-fiat {
     font-family: 'Roboto', sans-serif;
 }
+
 #texto-medio {
     margin-top: 80px;
     margin-left: 13%;
@@ -117,12 +128,26 @@ button.redondo {
 
 #impacto {
     background-color: #201b24;
-    height: 400px;
+    height: 600px;
     width: 100%;
     margin-top: 90px;
     align-items: center;
 }
 
+#colorCronos {
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: 30px;
+    color: #ccc;
+}
+
+#colorAuto {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 #cronos {
     max-width: 70%;
@@ -256,16 +281,18 @@ button.redondo {
     top: 20px;
 }
 
+/*Codigo menu header, cambiar color del boton dependiendo el menu*/
 .input:focus ~ .placeholder,
 .input:not(:placeholder-shown) ~ .placeholder {
-    transform: translateY(-40px) translateX(0px) scale(1); /* Esta linea en css es para que se nueva los campos arriba*/
+    transform: translateY(-40px) translateX(0px) scale(1);
 }
 
 .input:not(:placeholder-shown) ~ .placeholder {
     color: #808097;
 }
 
-.input:focus ~ .placeholder { /* pinta el texto en blanco al desplazarse*/
+/* Pinta el texto en blanco al desplazarse*/
+.input:focus ~ .placeholder {
     color: white;
 }
 
@@ -287,10 +314,10 @@ button.redondo {
 .submit:active {
     background-color: #06b;
 }
-  
+
 /* footer */
 .footer {
-    background-color: #f8f8f8;
+    background-color: darkred;
     padding: 30px 0;
 }
 
@@ -316,7 +343,6 @@ button.redondo {
     margin: 0;
     padding: 0;
 }
-
 
 
 .footer-bottom {

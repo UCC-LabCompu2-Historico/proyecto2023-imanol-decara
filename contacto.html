@@ -2,73 +2,96 @@
 <html lang="en">
 
 <head>
-    <meta autor="Imanol Decara" descripcion="Web no oficial de Fiat" palabras-clave="Fiat Cronos Planes">
+    <!-- Metadatos -->
+    <meta name="author" content="Imanol Decara">
+    <meta name="description" content="Web no oficial de Fiat">
+    <meta name="keywords" content="Fiat Cronos Planes">
+
+    <!-- Enlace a hoja de estilo externa -->
     <link rel="stylesheet" href="Style.css">
+
+    <!-- Configuración de juego de caracteres y viewport -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página y favicon -->
     <title>Fiat Argentina</title>
     <link rel="icon" type="image/x-icon" href="./img/Favicon.png">
 
 </head>
 
 <body id="fondo">
+<!-- Encabezado -->
 <header id="barra-superior">
+
+    <!-- Logo y enlaces de navegación -->
     <div id="espacio-logo">
-        <!-- Aca esta el navbar, donde coloco el logo y las 3 opciones para acceder a los otros html -->
         <img src="./img/logo.svg" alt="logo">
     </div>
     <div id="opciones">
 
+        <!-- Enlaces de navegación -->
         <a href="./Index.html">
-            <p class="opcion-texto">Inicio</p> <!-- Aca vas a inicio -->
+            <p class="opcion-texto">Inicio</p> <!-- Btn Inicio -->
         </a>
 
         <a href="./auto.html">
-            <p class="opcion-texto">Vehículos</p> <!-- Aca vas a ver al cronos y los autos -->
+            <p class="opcion-texto">Vehículos</p> <!-- Btn Autos -->
         </a>
 
         <a href="./contacto.html">
-            <button class="redondo ">Contacto</button> <!-- Aca vas al formulario -->
+            <button class="redondo ">Contacto</button> <!-- Btn Contacto -->
         </a>
 
 
+        <!-- Enlace a Instagram -->
         <a href="https://www.instagram.com/fiatargentina/?hl=es" target="_blank">
             <img src="https://img.icons8.com/?size=512&id=32323&format=png" class="favicon" alt="instagram">
-            <!-- icono de instagram que te lleva a la pagina -->
         </a>
 
     </div>
 </header>
 
 <main>
-<div id="contacto">
-    <form class="form" action="./notificacion.html">
-        <div class="title">Contacto</div>
-        <div class="subtitle">Ingresa tus datos para que te contactemos</div>
-        <fieldset id="borderless">
-            <div class="input-container ic1">
-                <input id="firstname" class="input" type="text" placeholder=" " required />
-                <div class="cut"></div>
-                <label for="firstname" class="placeholder">Nombre y Apellido</label>
-            </div>
-            <div class="input-container ic2">
-                <input id="lastname" class="input" type="number" placeholder=" " required />
-                <div class="cut"></div>
-                <label for="lastname" class="placeholder">Telefono</label>
-            </div>
-            <div class="input-container ic2">
-                <input id="email" class="input" type="email" placeholder=" " required />
-                <div class="cut cut-short"></div>
-                <label for="email" class="placeholder">Email</label>
-            </div>
-            <div>
-                <input type="submit" class="submit" value="Enviar">
-            </div>
-        </fieldset>
+    <!-- Sección de contenido principal -->
+    <div id="contacto">
+        <!-- Formulario con Accion notificaion.html-->
+        <form class="form" action="./notificacion.html">
 
-    </form>
-</div>
+            <!-- Título y Sub Titulo del formulario -->
+            <div class="title">Contacto</div>
+            <div class="subtitle">Ingresa tus datos para que te contactemos</div>
+
+            <!-- Campos del Formulario -->
+            <fieldset id="borderless">
+                <!-- Campo para el nombre y apellido -->
+                <div class="input-container ic1">
+                    <input id="firstname" class="input" type="text" onkeydown="return /[a-zA-Z]/i.test(event.key)"
+                           placeholder=" " required/>
+                    <div class="cut"></div>
+                    <label for="firstname" class="placeholder">Nombre y Apellido</label>
+                </div>
+                <!-- Campo para el número de teléfono -->
+                <div class="input-container ic2">
+                    <input id="lastname" class="input" type="number" placeholder=" " required/>
+                    <div class="cut"></div>
+                    <label for="lastname" class="placeholder">Telefono</label>
+                </div>
+                <!-- Campo para la dirección de correo electrónico -->
+                <div class="input-container ic2">
+                    <input id="email" class="input" type="email" placeholder=" " required/>
+                    <div class="cut cut-short"></div>
+                    <label for="email" class="placeholder">Email</label>
+                </div>
+                <div>
+                    <!-- Botón de envío del formulario -->
+                    <input type="submit" class="submit" value="Enviar">
+                </div>
+            </fieldset>
+
+        </form>
+    </div>
 </main>
 <footer>
 

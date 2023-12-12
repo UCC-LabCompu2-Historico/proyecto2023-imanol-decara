@@ -2,40 +2,53 @@
 <html lang="en">
 
 <head>
-    <meta autor="Imanol Decara" descripcion="Web no oficial de Fiat" palabras-clave="Fiat Cronos Planes">
+    <!-- Metadatos -->
+    <meta name="author" content="Imanol Decara">
+    <meta name="description" content="Web no oficial de Fiat">
+    <meta name="keywords" content="Fiat Cronos Planes">
+    
+    <!-- Enlace a hoja de estilo externa -->
     <link rel="stylesheet" href="Style.css">
+
+    <!-- Configuración de juego de caracteres y viewport -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página y favicon -->
     <title>Fiat Argentina</title>
     <link rel="icon" type="image/x-icon" href="./img/Favicon.png">
+
+    <!-- Script para funcionalidades adicionales -->
     <script src="script.js"></script>
 </head>
 
 <body id="fondo">
+<!-- Encabezado -->
 <header id="barra-superior">
+    <!-- Logo y enlaces de navegación -->
     <div id="espacio-logo">
-        <!-- Aca esta el navbar, donde coloco el logo y las 3 opciones para acceder a los otros html -->
         <img src="./img/logo.svg" alt="logo">
     </div>
     <div id="opciones">
 
+        <!-- Enlaces de navegación -->
         <a href="./Index.html">
-            <p class="opcion-texto">Inicio</p> <!-- Aca vas a inicio -->
+            <p class="opcion-texto">Inicio</p> <!-- Btn Inicio -->
         </a>
 
         <a href="./auto.html">
-            <p class="opcion-texto">Vehículos</p> <!-- Aca vas a ver al cronos y los autos -->
+            <p class="opcion-texto">Vehículos</p> <!-- Btn Autos -->
         </a>
 
         <a href="./contacto.html">
-            <p class="opcion-texto">Contacto</p> <!-- Aca vas al formulario -->
+            <p class="opcion-texto">Contacto</p> <!-- Btn Contacto -->
         </a>
 
 
+        <!-- Enlace a Instagram -->
         <a href="https://www.instagram.com/fiatargentina/?hl=es" target="_blank">
             <img src="https://img.icons8.com/?size=512&id=32323&format=png" class="favicon" alt="instagram">
-            <!-- icono de instagram que te lleva a la pagina -->
         </a>
 
     </div>
@@ -43,27 +56,34 @@
 
 
 <main>
+    <!-- Sección de contenido principal -->
     <div>
+        <!--Texto Inicio -->
         <h1 id="texto-inicio">Elije tu Plan de Cuotas </h1>
     </div>
-    <div id="contenedor-cuotas"> <!-- formulario para la cuotas -->
-        <form  action="notificacion.html">
+    <!-- Formulario para la cuotas -->
+    <div id="contenedor-cuotas">
+        <form action="notificacion.html">
             <fieldset>
 
+                <!-- Etiqueta y checkbox para el Plan Fiat -->
                 <label for="plan-fiat">
-                    <a class="texto-plan-fiat">Pertenezco al Plan Fiat:<input type="checkbox" id="plan-fiat" name="plan-fiat"><br></a>
+                    <a class="texto-plan-fiat">Pertenezco al Plan Fiat:<input type="checkbox" id="plan-fiat"
+                                                                              name="plan-fiat"><br></a>
                 </label>
 
-                <label for="cuotas" ><a class="texto-plan-fiat">¿En cuantas cuotas desea hacer el pago?</a>
+                <!-- Etiqueta y menú desplegable para seleccionar el número de cuotas -->
+                <label for="cuotas"><a class="texto-plan-fiat">¿En cuantas cuotas desea hacer el pago?</a>
                     <select id="cuotas" name="cuotas" required>
-                        <option value="" >(Elija una opcion)</option>
+                        <option value="">(Elija una opcion)</option>
                         <option value="1">Al contado(5% Descuento)</option>
                         <option value="2">6 cuotas(Sin interes)</option>
                         <option value="3">12 cuotas (5% Interes)</option>
-                        <option value="4">Plan Fiat: 24 cuotas(5% Interes) </option>
+                        <option value="4">Plan Fiat: 24 cuotas(5% Interes)</option>
                     </select>
                 </label>
 
+                <!-- Sección para mostrar el precio por cuota -->
                 <div>
                     <p class="texto-plan-fiat">Precio por cada cuota:</p>
                     <p id="texto-calcular-cuotas">0.00$</p>
@@ -71,28 +91,28 @@
                 </div>
 
 
+                <!-- Sección para aceptar el plan con checkbox -->
                 <div>
                     <label for="acepto">
-                        <a id="texto-acepto"> <a class="texto-plan-fiat">Acepto este plan</a><input type="checkbox" id="acepto" name="acepto" required></a>
+                        <a id="texto-acepto"> <a class="texto-plan-fiat">Acepto este plan</a><input type="checkbox"
+                                                                                                    id="acepto"
+                                                                                                    name="acepto"
+                                                                                                    required></a>
                     </label>
                 </div>
 
                 <div>
-                        <!-- boton que te lleva al html notificado para sacar el formulario de la vista -->
-                        <input type="submit" value="Enviar"/>
+                    <!-- Botón para enviar el formulario -->
+                    <input type="submit" value="Enviar"/>
                 </div>
 
-            </fieldset>  
+            </fieldset>
         </form>
     </div>
 </main>
 <footer>
-    
+
 </footer>
 </body>
 
 </html>
-
-
-
-

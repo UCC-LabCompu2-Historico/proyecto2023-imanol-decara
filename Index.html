@@ -2,100 +2,133 @@
 <html lang="en">
 
 <head>
-    <meta autor="Imanol Decara" descripcion="Web no oficial de Fiat" palabras-clave="Fiat Cronos Planes">
+    <!-- Metadatos -->
+    <meta name="author" content="Imanol Decara">
+    <meta name="description" content="Web no oficial de Fiat">
+    <meta name="keywords" content="Fiat Cronos Planes">
+
+    <!-- Enlace a hoja de estilo externa -->
     <link rel="stylesheet" href="Style.css">
-    <script src="script.js.js"></script>
+
+    <!-- Configuración de juego de caracteres y viewport -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página y favicon -->
     <title>Fiat Argentina</title>
     <link rel="icon" type="image/x-icon" href="./img/Favicon.png">
-    <!-- google fonts v v v -->
+
+    <!-- Fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body id="fondo">
+<!-- Encabezado -->
 <header id="barra-superior">
+
+    <!-- Logo y enlaces de navegación -->
     <div id="espacio-logo">
-        <!-- navbar  -->
         <img src="./img/logo.svg" alt="logo">
     </div>
     <div id="opciones">
 
+        <!-- Enlaces de navegación -->
         <a href="./Index.html">
-            <button class="redondo ">Inicio</button> <!-- ir a inicio -->
+            <button class="redondo ">Inicio</button> <!-- Btn Inicio -->
         </a>
 
         <a href="./auto.html">
-            <p class="opcion-texto">Vehículos</p> <!--  ver al cronos y los autos -->
+            <p class="opcion-texto">Vehículos</p> <!-- Btn Autos -->
         </a>
 
         <a href="./contacto.html">
-            <p class="opcion-texto">Contacto</p> <!-- ir al formulario -->
+            <p class="opcion-texto">Contacto</p> <!-- Btn Contacto -->
         </a>
 
 
+        <!-- Enlace a Instagram -->
         <a href="https://www.instagram.com/fiatargentina/?hl=es" target="_blank">
             <img src="https://img.icons8.com/?size=512&id=32323&format=png" class="favicon" alt="instagram">
-            <!-- instagram -->
         </a>
 
     </div>
 </header>
+
+<!-- Sección de contenido principal -->
 <main>
-<div>
-    <img id="banner" src="./img/banner-principal.jpg" alt="banner"> <!-- banner cronos -->
-</div>
-
-<div id="texto-medio">
-    <div id="introduction-text">
-        <h1 id="texto-inicio">Encontrá el concesionario Fiat más cerca tuyo. Contamos con
-            concesionarios en toda Argentina para que hagas un test drive y salgas en auto nuevo.</h1>
-    </div>
-    <div id="introduction-actions">
-
-        <a href="./auto.html">
-            <button class="redondo textbody">Autos ⮕</button>
-        </a>
-
-        <a href="./planes.html">
-            <button id="sumate-morado" class="redondo">Planes +</button>
-        </a>
-    </div>
-
-</div>
-<div id="impacto">
+    <!-- Banner e introducción -->
     <div>
-        <h1 id="texto-canvas">Canvas </h1>
-    </div>
-    <div >
-        <canvas id="myCanvas"></canvas>
-
-        <script src="script.js"></script>
+        <img id="banner" src="./img/banner-principal.jpg" alt="banner Cronos"> <!-- Banner Cronos -->
     </div>
 
-</div>
+    <div id="texto-medio">
+        <!-- Texto de introducción -->
+        <div id="introduction-text">
+            <h1 id="texto-inicio">Encontrá el concesionario Fiat más cerca tuyo. Contamos con
+                concesionarios en toda Argentina para que hagas un test drive y salgas en auto nuevo.</h1>
+        </div>
+        <div id="introduction-actions">
+
+            <!-- Acciones (botones) -->
+            <a href="./auto.html">
+                <button class="redondo textbody">Autos ⮕</button>
+            </a>
+
+            <a href="./planes.html">
+                <button id="sumate-morado" class="redondo">Planes +</button>
+            </a>
+        </div>
+
+        <!-- Sección Canvas y Selector de Color -->
+    </div>
+    <div id="impacto">
+        <div>
+            <h1 id="texto-canvas">Canvas </h1>
+            <canvas id="myCanvas"></canvas>
+            <div id="colorAuto">
+                <h1 id="colorCronos">Selecciona un color al Cronos:</h1>
+                <select id="colorSelector">
+                    <option value="red">Rojo</option>
+                    <option value="blue">Azul</option>
+                    <option value="yellow">Amarillo</option>
+                </select>
+            </div>
+        </div>
+        <div>
+
+            <!-- Script para Canvas -->
+            <script src="script.js"></script>
+        </div>
+
+    </div>
 </main>
+
+<!-- Pie de página -->
 <footer class="footer">
     <div class="container">
+
+        <!-- Contenido del pie de página, incluyendo logo y enlace a redes sociales -->
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="./img/logo.svg">
+                <img src="./img/logo.svg" alt="logo">
             </div>
             <div class="footer-social">
                 <a href="https://www.instagram.com/fiatargentina/?hl=es" target="_blank">
                     <img src="https://img.icons8.com/?size=512&id=32323&format=png" class="favicon" alt="instagram">
-                    <!-- instagram -->
                 </a>
             </div>
         </div>
+        <!-- Texto inferior del pie de página -->
         <div class="footer-bottom">
             <p>Todos los derechos reservados; 2023. Fiat</p>
         </div>
     </div>
 </footer>
+<!-- Script para funcionalidades adicionales -->
+<script src="script.js"></script>
 </body>
 
 </html>

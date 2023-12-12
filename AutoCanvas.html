@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración de juego de caracteres y viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilos CSS en línea para el canvas -->
+    <style>
+        canvas {
+            border: 1px solid #000;
+            display: block;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Canvas identificador "y tamaño en píxeles -->
+<canvas id="myCanvas" width="400" height="200"></canvas>
+
+<!-- Etiqueta y lista desplegable para seleccionar el color del auto -->
+<label for="colorSelector">Selecciona un color:</label>
+<select id="colorSelector">
+    <option value="red">Rojo</option>
+    <option value="blue">Azul</option>
+    <option value="yellow">Amarillo</option>
+    <option value="black">Negro</option>
+</select>
+
+<!-- Bloque de script en JavaScript -->
+<script>
+    const myCanvas = document.getElementById("myCanvas"); // Obtiene el elemento canvas por su id
+    const ctx = myCanvas.getContext("2d"); // Obtiene el contexto de dibujo en 2D
+
+    // Inicialización de la posición x del automóvil y su velocidad
+    let x = 50;
+    let dx = 2;
+
+    // Función para dibujar el automóvil con el color seleccionado
+    function drawCar(color) {
+        ctx.clearRect(0, 0, myCanvas.width, myCanvas.height);
+        ctx.fillStyle = color;
+        ctx.fillRect(x, 80, 60, 20);
+        ctx.fillRect(x + 10, 70, 40, 10);
+        ctx.fillStyle = "black";
+        ctx.fillRect(x + 15, 70, 10, 10);
+        ctx.fillRect(x + 35, 70, 10, 10);
+        ctx.beginPath();
+        ctx.arc(x + 15, 87, 8, 0, Math.PI * 2, false);
+        ctx.arc(x + 45, 87, 8, 0, Math.PI * 2, false);
+        ctx.closePath();
+        ctx.fillStyle = "black";
+        ctx.fill();
+    }
+
+    // Función para actualizar la posición del auto
+    function updateCar() {
+        if (x + dx > myCanvas.width - 60 || x + dx < 0) {
+            dx = -dx;
+        }
+
+        x += dx;
+    }
+
+    // Función para animar el auto (usando requestAnimationFrame)
+    function animar() {
+        requestAnimationFrame(animar);
+        updateCar();
+        const colorSelector = document.getElementById("colorSelector");
+        const selectedColor = colorSelector.value;
+        drawCar(selectedColor);
+    }
+
+    animar();
+</script>
+
+</body>
+</html>

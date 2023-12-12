@@ -2,36 +2,51 @@
 <html lang="en">
 
 <head>
-    <meta autor="Imanol Decara" descripcion="Web no oficial de Fiat" palabras-clave="Fiat Cronos Planes">
+    <!-- Metadatos -->
+    <meta name="author" content="Imanol Decara">
+    <meta name="description" content="Web no oficial de Fiat">
+    <meta name="keywords" content="Fiat Cronos Planes">
+
+    <!-- Enlace a hoja de estilo externa -->
     <link rel="stylesheet" href="Style.css">
+
+    <!-- Configuración de juego de caracteres y viewport -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de la página y favicon -->
     <title>Fiat Argentina</title>
     <link rel="icon" type="image/x-icon" href="./img/Favicon.png">
 
 </head>
 
 <body id="fondo">
+
+<!-- Encabezado -->
 <header id="barra-superior">
+
+    <!-- Logo y enlaces de navegación -->
     <div id="espacio-logo">
         <img src="./img/logo.svg" alt="logo">
     </div>
     <div id="opciones">
 
+        <!-- Enlaces de navegación -->
         <a href="./Index.html">
-            <p class="opcion-texto">Inicio</p> <!-- Aca vas a inicio -->
+            <p class="opcion-texto">Inicio</p> <!-- Btn Inicio -->
         </a>
 
         <a href="./auto.html">
-            <button class="redondo ">Vehículos</button> <!-- Aca vas a ver al cronos y los autos -->
+            <button class="redondo ">Vehículos</button> <!-- Btn Autos -->
         </a>
 
         <a href="./contacto.html">
-            <p class="opcion-texto">Contacto</p> <!-- Aca vas al formulario -->
+            <p class="opcion-texto">Contacto</p> <!-- Btn Contactos -->
         </a>
 
 
+        <!-- Enlace a Instagram -->
         <a href="https://www.instagram.com/fiatargentina/?hl=es" target="_blank">
             <img src="https://img.icons8.com/?size=512&id=32323&format=png" class="favicon" alt="instagram">
         </a>
@@ -39,30 +54,35 @@
     </div>
 </header>
 <main>
-<div>
-    <img id="banner" src="./img/banner-cronos.jpg" alt="Banner Cronos"> <!-- banner cronos -->
-</div>
-
-<div>
-    <div id="auto-principal">
-
-        <img src="./img/datos-cronos.jpg" id="cronos" alt="Datos Cronos"> <!-- imagen del cronos -->
-
-        <div id="auto-derecha">
-            <iframe width="550" height="305" src="https://www.youtube.com/embed/oyIvTVWptsc"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            <iframe width="550" height="305" src="https://www.youtube.com/embed/d4KmJxIs9Yc"
-                    title="YouTube video player"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-        </div>
-
+    <!-- Sección de contenido principal -->
+    <div>
+        <!-- Banner Principal -->
+        <img id="banner" src="./img/banner-cronos.jpg" alt="Banner Cronos">
     </div>
 
+    <div>
+        <div id="auto-principal">
 
-</div>
+            <!-- Imagnen Datos Cronos -->
+            <img src="./img/datos-cronos.jpg" id="cronos" alt="Datos Cronos">
+
+            <!-- Contenedor Derecha -->
+            <div id="auto-derecha">
+                <!-- Videos YouTube -->
+                <iframe width="550" height="305" src="https://www.youtube.com/embed/oyIvTVWptsc"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                <iframe width="550" height="305" src="https://www.youtube.com/embed/d4KmJxIs9Yc"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+
+    </div>
 </main>
 <footer>
 
